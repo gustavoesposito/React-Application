@@ -16,14 +16,14 @@ function App() {
 
         <Router>
           <Navbar/>
+          <Container>
           <Routes>
-            <Container>
               <Route path='/' exact='true' element={<Home/>}></Route>
               <Route path='/empresa' element={<Empresa/>}></Route>
               <Route path='/contato' element={<Contato/>}></Route>
               <Route path='/newproject' element={<NewProject/>}></Route>
-            </Container>
-          </Routes>
+             </Routes>
+          </Container>
           <Footer/>
         </Router>
 
