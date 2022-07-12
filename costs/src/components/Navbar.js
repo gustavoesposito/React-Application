@@ -9,7 +9,7 @@ function Navbar(){
           <Link to='/'>Home</Link>
         </li>
         <li className={styles.item}>
-          <Link to='/empresa'>Empresa</Link>
+          <Link to='/empresa'>Sobre</Link>
         </li>
         <li className={styles.item}>
           <Link to='/contato'>Contato</Link>
