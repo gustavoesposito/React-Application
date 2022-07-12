@@ -1,3 +1,4 @@
+import Container from './components/layout/Container.js';
 
 import Home from './pages/Home.js';
 import Empresa from './pages/Empresa.js';
