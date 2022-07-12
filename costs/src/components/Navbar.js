@@ -5,40 +5,33 @@ import Container from './layout/Container'
 import styles from './Navbar.module.css'
 import logo from '../img/costs_logo.png'
 
-function Navbar(){
+function Navbar (){
 return(
-    <nav className={styles.navbar}>
-   <Container>
-  <Link to= "/">
-    <img src={logo} alt="Costs"/>
-  </Link>
-   <ul className={styles.list}>
+  <nav>
+<Link to="/">
+  <img src={logo} alt="Costs"/>
+</Link>
+ <ul>
+  <li>
+  <Link to="/">Home</Link>
 
-    <li className={styles.item}>
-    <Link to="/">Home</Link>
-   
-     </li>
+  </li>
+  <li>
 
-     <li className={styles.item}>
-    <Link to="/projects">Projetos</Link>
-   
-     </li>
+<Link to="/empresa">Sobre</Link>
 
-    <li className={styles.item}>
-    <Link to="/company">Empresa</Link>
- </li>
-
- <li className={styles.item}>
-    <Link to="/contact">Contato</Link>
- </li>
-
-    <li className={styles.item}>
-    <Link to="/newproject">Novo Projeto</Link>
-    </li>
-
-   </ul>
-   </Container>
- </nav>
+  </li>
+  <li>
+  
+<Link to="/contato">Contato</Link>
+   </li>
+  <li>
+  
+<Link to="/newproject">Novo Projeto</Link>
+  </li>
+ </ul>
+  </nav>
 )
 }
+
 export default Navbar
