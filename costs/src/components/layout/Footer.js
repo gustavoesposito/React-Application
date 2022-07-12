@@ -1,3 +1,6 @@
+import
+
+
 function Footer (){
     return <footer>Rodapé</footer>
 }
