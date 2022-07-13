@@ -30,7 +30,7 @@ return(
   
 <Link to="/contato">Contato</Link>
    </li>
-  <li className={styles.item}>
+ <li className={styles.item}>
   
 <Link to="/newproject">Novo Projeto</Link>
   </li>
