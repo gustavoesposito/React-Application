@@ -21,7 +21,7 @@ return(
 <Link to="/projects">Projetos</Link>
 
   </li>
-  <li className={styles.item}>
+  <li className={styles.item} >
 
 <Link to="/empresa">Sobre</Link>
 
@@ -34,6 +34,7 @@ return(
   
 <Link to="/newproject">Novo Projeto</Link>
   </li>
+
  </ul>
   </nav>
 )

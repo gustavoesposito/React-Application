@@ -4,13 +4,13 @@ import styles from './Footer.module.css'
 
 function Footer (){
     return (
-    <footer>
-        <ul  className={styles.social_list}>
+    <footer className={styles.footer}>
+        <ul   >
             <li><FaFacebook/></li>
             <li><FaInstagram/></li>
             <li><FaLinkedin/></li>
         </ul>
-      
+      <p   ><span>Costs</span> &copy; 2021</p>
          </footer>
     )
  }
