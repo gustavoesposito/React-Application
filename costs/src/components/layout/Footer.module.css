@@ -5,16 +5,28 @@
    text-align:center;
 }
 
-.social-list{
+.social_list{
    display:flex;
    justify-content:center;
    list-style-type: none;
 }
 
-.social-list li{
+.social_list li{
    margin:  0 1em;
 }
 
-.social-list li:hover{
+.social_list svg{
    color: #ffbb33;
+}
+.social_list li:hover{
+font-size: 1.5em;
+cursor: pointer;
+}
+
+.copy_right{
+   margin-top: 2em;
+}
+
+.copy_right{
+   margin-top: 2em;
 }
