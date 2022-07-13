@@ -6,9 +6,10 @@ import Contato from './pages/Contato.js';
 import Navbar from './components/Navbar'
  import Footer from './components/layout/Footer'
 import NewProject from './pages/NewProject';
+import Projects from './pages/Projects'
 
 import { BrowserRouter as Router, Routes, Route, Link   } from 'react-router-dom';
-
+ 
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
  <Container customClass="min_height">
         <Routes>
               <Route path='/' exact='true' element={<Home/>}></Route>
+              <Route path='/projects'   element={<Projects/>}></Route>
               <Route path='/empresa' element={<Empresa/>}></Route>
               <Route path='/contato' element={<Contato/>}></Route>
               <Route path='/newproject' element={<NewProject/>}></Route>

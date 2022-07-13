@@ -18,6 +18,11 @@ return(
   </li>
   <li className={styles.item}>
 
+<Link to="/projects">Projetos</Link>
+
+  </li>
+  <li className={styles.item}>
+
 <Link to="/empresa">Sobre</Link>
 
   </li>
