@@ -3,7 +3,7 @@ import savings from '../img/economia.svg'
 
 function Home(){
     return(
-       <section>
+       <section className={styles.home_container}>
         <h1>Bem-Vindo ao <span>Costs</span></h1>
         <p>Comece agora mesmo a gerenciar seus projetos</p>
         <a href="/">Criar Projeto</a>
