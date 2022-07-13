@@ -27,6 +27,7 @@ cursor: pointer;
    margin-top: 2em;
 }
 
-.copy_right{
-   margin-top: 2em;
+.copy_right span{
+color:#ffbb33
+font-weight:bold;
 }
