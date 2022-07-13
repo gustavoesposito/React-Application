@@ -15,9 +15,9 @@ function App() {
       <header className="App-header">
 
         <Router>
-          <Navbar/>
-          <Container customClass="min_height">
-          <Routes>
+        <Navbar/>
+ <Container customClass="min_height">
+        <Routes>
               <Route path='/' exact='true' element={<Home/>}></Route>
               <Route path='/empresa' element={<Empresa/>}></Route>
               <Route path='/contato' element={<Contato/>}></Route>

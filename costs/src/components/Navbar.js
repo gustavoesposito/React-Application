@@ -7,25 +7,25 @@ import logo from '../img/costs_logo.png'
 
 function Navbar (){
 return(
-  <nav>
+  <nav className={styles.navbar}>
 <Link to="/">
   <img src={logo} alt="Costs"/>
 </Link>
- <ul>
-  <li>
+ <ul className={styles.list}>
+  <li className={styles.item}>
   <Link to="/">Home</Link>
 
   </li>
-  <li>
+  <li className={styles.item}>
 
 <Link to="/empresa">Sobre</Link>
 
   </li>
-  <li>
+  <li className={styles.item}>
   
 <Link to="/contato">Contato</Link>
    </li>
-  <li>
+  <li className={styles.item}>
   
 <Link to="/newproject">Novo Projeto</Link>
   </li>
