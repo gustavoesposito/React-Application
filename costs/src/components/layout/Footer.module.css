@@ -14,3 +14,7 @@
 .social-list li{
    margin:  0 1em;
 }
+
+.social-list li:hover{
+   color: #ffbb33;
+}
