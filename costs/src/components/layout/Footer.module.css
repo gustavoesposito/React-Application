@@ -1,4 +1,16 @@
 .footer{
    background-color: #222;
-   color: ;
+   color: #fff;
+   padding: 3em;
+   text-align:center;
+}
+
+.social-list{
+   display:flex;
+   justify-content:center;
+   list-style-type: none;
+}
+
+.social-list li{
+   margin:  0 1em;
 }
