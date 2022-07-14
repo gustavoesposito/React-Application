@@ -28,7 +28,7 @@ return (
             
             />
        
-         <Submit />
+         <Submit text={btnText}/>
     </form>
 )
 }
