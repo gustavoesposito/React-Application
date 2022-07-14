@@ -9,7 +9,7 @@ return (
              <Input/>
         </div>
         <div>
-            <input type="number" placeholder="Insira o preço total"/>
+        <Input/>
             </div>
         <div>
             <select name="category_id">
