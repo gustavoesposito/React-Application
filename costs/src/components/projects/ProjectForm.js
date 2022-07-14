@@ -14,7 +14,7 @@ return (
               />
         </div>
         <div>
-        <Input/>
+        <Input t/>
             </div>
         <div>
             <select name="category_id">
