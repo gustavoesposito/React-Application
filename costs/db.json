@@ -1,3 +1,21 @@
 {
-    "projects":[]
+    "projects":[],
+    "categories":[
+      {
+        "id":1,
+        "name":"Vendas"
+      },
+      {
+        "id":2,
+        "name":"Marketing"
+      },
+      {
+        "id":3,
+        "name":"Design"
+      },
+      {
+        "id":4,
+        "name":"Vendas"
+      }
+    ]
 }
