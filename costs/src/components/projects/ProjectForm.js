@@ -8,18 +8,16 @@ import Submit from '../form/SubmitButton'
 
 function ProjectForm({btnText}){
     const [categories, setCategories] =useState([])
-
- fetch("http://localhost:5000/categories" ,{
-        method: "GET",
+useEffect(()=>{
+    fetch('http://localhost:5000/categories',{
+        method:'GET',
         headers:{
-            'Content-Type': 'application/json'
-        }
+            'Content-Type': 'applicatio/json',
+        },
     })
-    .then((reps) => reps.json())
-    .then((data) => {
-        setCategories(data)
-    })
-    .catch((err) => console.log(err))
+    .then((res)=> resp.json() )
+}
+    
 
 return (
      <form className={styles.form}>
