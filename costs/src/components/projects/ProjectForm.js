@@ -2,8 +2,9 @@ import styles from './ProjectForm.module.css'
 
 import Input from '../form/input'
 import Select from '../form/Select'
+import Submit from '../form/SubmitButton'
 
-function ProjectForm(){
+function ProjectForm({btnText}){
 return (
     <form className={styles.form}>
         
@@ -27,7 +28,7 @@ return (
             
             />
        
-         
+         <Submit />
     </form>
 )
 }
