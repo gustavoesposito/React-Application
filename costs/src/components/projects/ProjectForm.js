@@ -8,7 +8,7 @@ import Submit from '../form/SubmitButton'
 
 function ProjectForm({btnText}){
     const [categories, setCategories] =useState([])
-    
+
  fetch("http://localhost:5000/categories" ,{
         method: "GET",
         headers:{
@@ -41,7 +41,7 @@ return (
             <Select
             name="category_id"
             text="Selecione uma Categoria" 
-            
+            options={categories}
             />
        
          <Submit text={btnText}/>
