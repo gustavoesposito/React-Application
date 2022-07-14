@@ -16,7 +16,11 @@ useEffect(()=>{
         },
     })
     .then((res)=> resp.json() )
-}
+    .then((data) => {
+        setCategories(data)
+    })
+    .catch((err)=> console.log(err))
+},[])
     
 
 return (
