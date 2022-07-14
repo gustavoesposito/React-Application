@@ -6,7 +6,12 @@ function ProjectForm(){
 return (
     <form className={styles.form}>
         <div>
-             <Input/>
+             <Input 
+             type="text"
+             text="Nome Do Projeto"
+             name="name"
+             placeholder="Insira o Nome Do Projeto"
+              />
         </div>
         <div>
         <Input/>
