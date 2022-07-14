@@ -22,7 +22,11 @@ return (
         placeholder="Insira o valor do orçamento do projeto"/>
             </div>
         <div>
-            <Select/>
+            <Select
+            name="category_id"
+            text="Selecione uma Categoria" 
+            
+            />
         </div>
         <div>
             <input type="submit" value="Criar Projeto"/>
