@@ -1,12 +1,28 @@
 import styles from './ProjectForm.module.css'
 
+import{useEffect, useState} from 'react'
+
 import Input from '../form/input'
 import Select from '../form/Select'
 import Submit from '../form/SubmitButton'
 
 function ProjectForm({btnText}){
+    const [categories, setCategories] =useState([])
+    
+ fetch("http://localhost:5000/categories" ,{
+        method: "GET",
+        headers:{
+            'Content-Type': 'application/json'
+        }
+    })
+    .then((reps) => reps.json())
+    .then((data) => {
+        setCategories(data)
+    })
+    .catch((err) => console.log(err))
+
 return (
-    <form className={styles.form}>
+     <form className={styles.form}>
         
              <Input 
              type="text"
