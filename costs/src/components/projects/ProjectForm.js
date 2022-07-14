@@ -14,7 +14,11 @@ return (
               />
         </div>
         <div>
-        <Input t/>
+        <Input  
+        type="number"
+        text="Orçamento do Projeto"
+        name="budget"
+        placeholder="Insira o valor do orçamento do projeto"/>
             </div>
         <div>
             <select name="category_id">
