@@ -15,7 +15,7 @@ useEffect(()=>{
             'Content-Type': 'applicatio/json',
         },
     })
-    .then((res)=> resp.json() )
+    .then((resp)=> resp.json() )
     .then((data) => {
         setCategories(data)
     })
