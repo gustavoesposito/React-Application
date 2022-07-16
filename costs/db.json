@@ -32,6 +32,17 @@
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "Desenvolvimento de software",
+      "budget": "89789",
+      "category": {
+        "id": "1",
+        "name": "Vendas"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     }
   ],
   "categories": [
