@@ -1,11 +1,17 @@
 import ProjectForm from '../components/projects/ProjectForm'
 import styles from './NewProject.module.css'
 
-import {useHistory} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 function NewProject( ){
 
-    const history=useHistory()
+    const navigate = useNavigate()
+
+    function createPost(project){
+   //initialize cost and services
+
+    }
+
 
     return (
         <div className={styles.newproject_container}>
