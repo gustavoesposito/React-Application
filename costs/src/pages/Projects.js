@@ -4,7 +4,7 @@ function Projects(){
     return (
         <div>
             <h1>Meus Projetos</h1>
-            <Message msg="Proejto criado com sucesso"/>
+            <Message msg="Projeto criado com sucesso"/>
         </div>
     )
 }
