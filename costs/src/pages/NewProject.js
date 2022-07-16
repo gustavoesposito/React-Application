@@ -14,7 +14,7 @@ function NewProject( ){
   
 
     fetch("http:/localhost::5000/projects",{
-        method:"POST",
+        method:'POST',
         headers:{
             'Content-Type': 'application/json'
         },

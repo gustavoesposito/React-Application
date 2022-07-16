@@ -24,7 +24,7 @@ useEffect(()=>{
 },[])
     
 const submit = (e) => {
-    e.preventDefsult()
+    e.preventDefault()
     handleSubmit(project)
 }
  function handleChange(e){
