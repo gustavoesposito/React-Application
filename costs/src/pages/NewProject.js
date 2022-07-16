@@ -1,7 +1,12 @@
 import ProjectForm from '../components/projects/ProjectForm'
 import styles from './NewProject.module.css'
 
+import {useHistory} from 'react-router-dom'
+
 function NewProject( ){
+
+    const history=useHistory()
+
     return (
         <div className={styles.newproject_container}>
             <h1>Criar Projeto</h1>
