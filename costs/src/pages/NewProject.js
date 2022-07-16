@@ -18,7 +18,8 @@ function NewProject( ){
         headers:{
             'Content-Type': 'application/json'
         },
-    }).then().catch()
+    }).then(resp => resp.json())
+    .catch(err=> console.log(err))
 }
 
     return (
