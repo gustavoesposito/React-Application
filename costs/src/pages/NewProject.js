@@ -11,8 +11,15 @@ function NewProject( ){
    //initialize cost and services
      project.cost=0
      project.services= []
-    }
+  
 
+    fetch("http:/localhost::5000/projects",{
+        method:"POST",
+        headers:{
+            'Content-Type': 'application/json'
+        },
+    }).then().catch()
+}
 
     return (
         <div className={styles.newproject_container}>
