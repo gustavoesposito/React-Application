@@ -25,7 +25,8 @@ useEffect(()=>{
     
 const submit = (e) => {
     e.preventDefault()
-    handleSubmit(project)
+    //handleSubmit(project)
+    console.log(project)
 }
  function handleChange(e){
     setProject({...project, [e.target.name]: e.target.value})
@@ -48,6 +49,8 @@ return (
              text="Nome Do Projeto"
              name="name"
              placeholder="Insira o Nome Do Projeto"
+             value={project.name}
+
               />
         
         <Input  
@@ -56,7 +59,7 @@ return (
         name="budget"
         placeholder="Insira o valor do orçamento do projeto"
         handleOnChange={handleChange}
- 
+         value={project.budget}
         />
             
       
@@ -65,7 +68,7 @@ return (
             text="Selecione uma Categoria" 
             options={categories}
             handleOnChange={handleCategory}
-
+            value={project.category ? project.category.id : ''}
             />
        
          <Submit text={btnText}/>

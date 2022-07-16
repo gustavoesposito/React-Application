@@ -10,6 +10,7 @@ return (
         id={name}
         placeholder={placeholder}
         onChange={handleOnChange}
+        value={value}
         />
     </div>
 )
