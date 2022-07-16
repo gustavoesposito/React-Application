@@ -18,7 +18,9 @@ function NewProject( ){
         headers:{
             'Content-Type': 'application/json'
         },
-    }).then(resp => resp.json())
+        body: JSON.stringify(project),
+    })
+    .then(resp => resp.json())
     .then((data)=> {
         console.log(data)
     })
@@ -29,7 +31,7 @@ function NewProject( ){
         <div className={styles.newproject_container}>
             <h1>Criar Projeto</h1>
             <p>Crie Seu Projeto para depois adicionar os serviços</p>
-            <ProjectForm btnText="Criar Projeto"/>
+            <ProjectForm handleSubmit={createPost} btnText="Criar Projeto"/>
        </div>
     )
 }
