@@ -23,11 +23,11 @@ useEffect(()=>{
     .catch((err)=> console.log(err))
 },[])
     
-const submit = (e) => {
+const submit =(e) => {
     e.preventDefault()
-    //handleSubmit(project)
-    console.log(project)
-}
+    //console.log(project)
+    handleSubmit(project)
+    }
  function handleChange(e){
     setProject({...project, [e.target.name]: e.target.value})
    }
@@ -49,7 +49,7 @@ return (
              text="Nome Do Projeto"
              name="name"
              placeholder="Insira o Nome Do Projeto"
-             value={project.name}
+             value={project.name ? project.name : ''}
 
               />
         
@@ -59,7 +59,7 @@ return (
         name="budget"
         placeholder="Insira o valor do orçamento do projeto"
         handleOnChange={handleChange}
-         value={project.budget}
+         value={project.budget ? project.budget : ''}
         />
             
       

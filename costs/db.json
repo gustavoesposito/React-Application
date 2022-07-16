@@ -1,21 +1,44 @@
 {
-    "projects":[],
-    "categories":[
-      {
-        "id":1,
-        "name":"Vendas"
+  "projects": [
+    {
+      "name": "Desenvolvimento de software",
+      "budget": "5600",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
       },
-      {
-        "id":2,
-        "name":"Marketing"
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Desenvolvimento de software",
+      "budget": "5600",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
       },
-      {
-        "id":3,
-        "name":"Design"
-      },
-      {
-        "id":4,
-        "name":"Vendas"
-      }
-    ]
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Vendas"
+    },
+    {
+      "id": 2,
+      "name": "Marketing"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Vendas"
+    }
+  ]
 }
