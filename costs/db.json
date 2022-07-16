@@ -21,6 +21,17 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Desenvolvimento de vendas",
+      "budget": "3000",
+      "category": {
+        "id": "1",
+        "name": "Vendas"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [
