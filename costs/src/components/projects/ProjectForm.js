@@ -27,7 +27,9 @@ const submit = (e) => {
     e.preventDefsult()
     handleSubmit(project)
 }
-
+ function handleChange(e){
+    setProject({...project, [e.target.name]: e.target.value})
+ }
 return (
      <form onSubmit={submit} className={styles.form}>
         
