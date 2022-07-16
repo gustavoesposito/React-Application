@@ -43,6 +43,44 @@
       "cost": 0,
       "services": [],
       "id": 4
+    },
+    {
+      "name": "Desenvolvimento",
+      "budget": "66978",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Gustavo",
+      "budget": "6789",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
+    },
+    {
+      "name": "Gustavo",
+      "budget": "67890",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 8
     }
   ],
   "categories": [
