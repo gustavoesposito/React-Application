@@ -29,11 +29,13 @@ const submit = (e) => {
 }
  function handleChange(e){
     setProject({...project, [e.target.name]: e.target.value})
+    console.log(project)
  }
 return (
      <form onSubmit={submit} className={styles.form}>
         
              <Input 
+             handleOnChange={handleChange}
              type="text"
              text="Nome Do Projeto"
              name="name"
@@ -44,7 +46,10 @@ return (
         type="number"
         text="Orçamento do Projeto"
         name="budget"
-        placeholder="Insira o valor do orçamento do projeto"/>
+        placeholder="Insira o valor do orçamento do projeto"
+        handleOnChange={handleChange}
+
+        />
             
       
             <Select
