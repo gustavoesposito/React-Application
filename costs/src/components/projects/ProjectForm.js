@@ -44,7 +44,7 @@ return (
         
              <Input 
              handleOnChange={handleChange}
-             type="text"
+               type="text"
              text="Nome Do Projeto"
              name="name"
              placeholder="Insira o Nome Do Projeto"
@@ -56,7 +56,7 @@ return (
         name="budget"
         placeholder="Insira o valor do orçamento do projeto"
         handleOnChange={handleChange}
-
+ 
         />
             
       
@@ -64,6 +64,8 @@ return (
             name="category_id"
             text="Selecione uma Categoria" 
             options={categories}
+            handleOnChange={handleCategory}
+
             />
        
          <Submit text={btnText}/>
