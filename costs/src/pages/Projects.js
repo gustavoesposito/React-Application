@@ -2,7 +2,7 @@ import Message from "../components/layout/Message"
 import Container from "../components/layout/Container"
 import LinkButton from "../components/layout/LinkButton"
 import ProjectCard from "../components/projects/ProjectCard"
-
+ 
 import {useLocation} from 'react-router-dom'
 import {useState,useEffect} from 'react '
 
@@ -40,12 +40,12 @@ function Projects(){
                 <LinkButton  className={styles.btn} to="/newproject" text="Criar Projeto"/>
              </div>
              
-          {message && <Message type="sucess" msg={message}/>}
+          {message && <Message type="success" msg={message}/>}
           <Container customClass="start">
-            {projects.lenght>0 &&
-            projects.map((project)=>(
-                
-            ))}
+            {projects.lenght > 0 &&
+            projects.map((project)=>
+                <ProjectCard name ={project.name}/>
+            )}
            </Container>
           </div>
     )
