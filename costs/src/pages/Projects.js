@@ -16,9 +16,11 @@ function Projects(){
         <div>
             <div>
                 <h1>Meus Projetos</h1>
+                <a href ="#">Novo Projeto</a>
             </div>
           {message && <Message type="sucess" msg={message}/>}
-        </div>
+          <Container></Container>
+          </div>
     )
 }
 
