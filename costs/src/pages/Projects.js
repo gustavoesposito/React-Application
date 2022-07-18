@@ -20,9 +20,18 @@ function Projects(){
         message= location.state.message
     }
     useEffect (()=>{
-        
-    }
-    )
+      fetch('http://localhost:5000/projects',{
+        method:'GET',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+      })
+      .then(resp=> resp.json())
+      .then(data=>{
+        setProjects(data)
+    })
+      .catch(err => console.log(err))
+    },[])
 
     return (
         <div className={styles.project_container}>
@@ -33,8 +42,11 @@ function Projects(){
              
           {message && <Message type="sucess" msg={message}/>}
           <Container customClass="start">
-          <p>  Projetos....</p>
-          </Container>
+            {projects.lenght>0 &&
+            projects.map((project)=>(
+                
+            ))}
+           </Container>
           </div>
     )
 }
