@@ -1,5 +1,5 @@
 import Message from "../components/layout/Message"
-
+import Container from "../components/layout/Container"
 import {useLocation} from 'react-router-dom'
 
 import styles from './Projects.module.css'
@@ -19,7 +19,9 @@ function Projects(){
                 <a href ="#">Novo Projeto</a>
             </div>
           {message && <Message type="sucess" msg={message}/>}
-          <Container></Container>
+          <Container customClass="start">
+          <p>Meus Projetos</p>
+          </Container>
           </div>
     )
 }
