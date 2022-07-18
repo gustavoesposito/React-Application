@@ -18,12 +18,12 @@ function Projects(){
         <div className={styles.project_container}>
             <div className={styles.title_container}>
                 <h1>Meus Projetos</h1>
-                <LinkButton to="newproject" text="Criar Projeto"/>
-                <a href ="#">Novo Projeto</a>
-            </div>
+                <LinkButton  className={styles.btn} to="/newproject" text="Criar Projeto"/>
+             </div>
+             
           {message && <Message type="sucess" msg={message}/>}
           <Container customClass="start">
-          <p>Meus Projetos</p>
+          <p>  Projetos....</p>
           </Container>
           </div>
     )

@@ -1,10 +1,14 @@
 .project_container{
     padding: 2em;
+    
+  
 
 }
 
 .title_container{
     display:flex ;
-    justify-content: space-between;
+    justify-content:space-between ;    
     margin-bottom: 2em;
-}
+     row-gap: 20px;
+   }
+   

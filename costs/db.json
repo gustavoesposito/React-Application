@@ -92,6 +92,39 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "name": "Desenvolvimento de software",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Vendas"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "name": "Gustavo",
+      "budget": "54567",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 11
+    },
+    {
+      "name": "Desenvolvimento de software",
+      "budget": "909090",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 12
     }
   ],
   "categories": [
