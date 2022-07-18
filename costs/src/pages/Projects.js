@@ -4,7 +4,7 @@ import LinkButton from "../components/layout/LinkButton"
 import ProjectCard from "../components/projects/ProjectCard"
  
 import {useLocation} from 'react-router-dom'
-import {useState,useEffect} from 'react '
+import {useState,useEffect} from 'react'
 
 
 import styles from './Projects.module.css'
@@ -42,7 +42,7 @@ function Projects(){
              
           {message && <Message type="success" msg={message}/>}
           <Container customClass="start">
-            {projects.lenght > 0 &&
+            {projects.length > 0 &&
             projects.map((project)=>
                 <ProjectCard name ={project.name}/>
             )}
