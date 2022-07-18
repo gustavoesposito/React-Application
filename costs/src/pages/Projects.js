@@ -1,5 +1,7 @@
 import Message from "../components/layout/Message"
 import Container from "../components/layout/Container"
+import LinkButton from "../components/layout/LinkButton"
+
 import {useLocation} from 'react-router-dom'
 
 import styles from './Projects.module.css'
@@ -16,6 +18,7 @@ function Projects(){
         <div>
             <div>
                 <h1>Meus Projetos</h1>
+                <LinkButton to="newproject" text="Criar Projeto"/>
                 <a href ="#">Novo Projeto</a>
             </div>
           {message && <Message type="sucess" msg={message}/>}
