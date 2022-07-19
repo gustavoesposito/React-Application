@@ -29,7 +29,7 @@
         align-items: center;
     }
     .category_text span{
-        display: block;
+        display: inline-block;
         width: 12px;
         height: 12px;
         border-radius: 50%;
