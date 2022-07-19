@@ -2,7 +2,7 @@ import Message from "../components/layout/Message"
 import Container from "../components/layout/Container"
 import LinkButton from "../components/layout/LinkButton"
 import ProjectCard from "../components/projects/ProjectCard"
-import Loading from '../layout/Loading'
+import Loading from "../components/layout/Loading"
  
 import {useLocation} from 'react-router-dom'
 import {useState,useEffect} from 'react'
@@ -22,6 +22,7 @@ function Projects(){
         message= location.state.message
     }
     useEffect (()=>{
+    setTimeout(() =>{
       fetch('http://localhost:5000/projects',{
         method:'GET',
         headers: {
@@ -31,9 +32,12 @@ function Projects(){
       .then(resp=> resp.json())
       .then(data=>{
         setProjects(data)
+        setRemoveLoading(true)
     })
       .catch(err => console.log(err))
-    },[])
+    }, 3000 )
+ 
+     },[])
 
     return (
         <div className={styles.project_container}>
@@ -45,7 +49,7 @@ function Projects(){
           {message && <Message type="success" msg={message}/>}
           <Container customClass="start">
             {projects.length > 0 &&
-            projects.map((project)=>
+            projects.map((project)=>(
                 <ProjectCard 
                 name={project.name}
                 id= {project.id}
@@ -54,7 +58,8 @@ function Projects(){
                 key={project.id}
                 
                 />
-            )}
+            ))}
+            {!removeLoading &&  <Loading/>}
            </Container>
           </div>
     )
