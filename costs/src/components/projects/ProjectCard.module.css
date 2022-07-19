@@ -36,3 +36,24 @@
         background-color: #CCC;
         margin-right: 5px;
     }
+
+    .category_text .vendas{
+    background-color: #FFAEBC;
+    }
+
+    .category_text .marketing{
+        background-color: #A0E7E5;
+
+    }
+
+    .category_text .design{
+        background-color: #B4F8C8;
+
+    }
+
+    .category_text .vendas{
+        background-color: #fbe7c6;
+
+    }
+
+  
