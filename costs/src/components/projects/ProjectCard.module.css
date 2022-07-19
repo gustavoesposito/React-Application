@@ -7,4 +7,10 @@
 
 }
 
-.project_card
+.project_card h4{
+    background-color: #222;
+    color: #ffbb33;
+    padding: .4em;
+    margin-bottom: 1.3em;
+    font-size: 1.3em;
+}
