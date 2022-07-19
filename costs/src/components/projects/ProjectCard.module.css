@@ -56,4 +56,10 @@
 
     }
 
+    .project_card_action{
+        margin-top: 1.2em;
+        display:  flex;
+        align-items: center;
+    }
+
   

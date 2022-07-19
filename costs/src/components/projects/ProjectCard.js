@@ -10,9 +10,9 @@ return(
             <span>Orçamento:</span> R${budget}
         </p>
         <p className={styles.category_text}>
-            <span className={`${styles[category.toLowerCase()]}`}></span> {category}
+        <span className = {`${styles[category?.toLowerCase() || '']}`}> </span> {category}
         </p>
-        <div>
+        <div className={styles.project_card_action }>
             <p>Editar</p>
             <p>Remover</p>
         </div>
