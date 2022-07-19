@@ -44,9 +44,14 @@ function Projects(){
      fetch(`http://localhost:5000/projects/${id}`,{
       method:'DELETE',
      headers:{
-      
+      'Content-Type': 'application/json'
      }
+    }) 
+    .then(resp=>resp.jsons())
+    .then(data=> {
+      setProjects(projects.filter((project)=> project.id !== id))
     })
+    .catch(err=> console.log(err))
 }
 
     return (
@@ -66,7 +71,7 @@ function Projects(){
                 budget={project.budget}
                 category={project.category?project.category.name:project.category}
                 key={project.id}
-                
+                handleRemove={removeProject}
                 />
             ))}
             {!removeLoading &&  <Loading/>}

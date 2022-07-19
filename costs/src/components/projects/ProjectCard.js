@@ -20,7 +20,7 @@ return(
              <Link to="/">
                 <BsPencil/> Editar
              </Link>
-              <button>
+              <button onClick={remove}>
                 <BsFillTrashFill/> Excluir
               </button>
         </div>
