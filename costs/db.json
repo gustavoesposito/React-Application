@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "5000",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
+      },
+      "budget": "554567",
+      "cost": 0,
+      "services": [],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,
