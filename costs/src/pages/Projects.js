@@ -39,6 +39,13 @@ function Projects(){
  
      },[])
 
+     function removeProject(id){
+      
+     fetch(`http://localhost:5000/projects/${id}`,
+     )
+
+     }
+
     return (
         <div className={styles.project_container}>
             <div className={styles.title_container}>
@@ -62,7 +69,7 @@ function Projects(){
             {!removeLoading &&  <Loading/>}
             {removeLoading && projects.lenght===0&&(
               <p>Não há projetos cadastrados
-                
+
               </p>
             )}
            </Container>
