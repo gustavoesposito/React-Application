@@ -2,6 +2,7 @@ import Message from "../components/layout/Message"
 import Container from "../components/layout/Container"
 import LinkButton from "../components/layout/LinkButton"
 import ProjectCard from "../components/projects/ProjectCard"
+import Loading from '../layout/Loading'
  
 import {useLocation} from 'react-router-dom'
 import {useState,useEffect} from 'react'
@@ -13,6 +14,7 @@ function Projects(){
 
 
     const  [projects, setProjects] = useState([])
+    const [removeLoading, setRemoveLoading] =useState(false)
 
     const location =useLocation()
     let message ='';
