@@ -9,7 +9,7 @@ return(
         <p>
             <span>Orçamento:</span> R${budget}
         </p>
-        <p>
+        <p className={styles.category_text}>
             <span> </span>  {category} 
         </p>
         <div>
