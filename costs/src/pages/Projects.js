@@ -11,14 +11,12 @@ import {useState,useEffect} from 'react'
 import styles from './Projects.module.css'
 
 function Projects(){
-
-
     const  [projects, setProjects] = useState([])
     const [removeLoading, setRemoveLoading] =useState(false)
     const [projectMessage, setProjectMessage] = useState('')
 
     const location =useLocation()
-    let message ='';
+    let message =''
     if(location.state){
         message= location.state.message
     }
@@ -38,10 +36,9 @@ function Projects(){
     })
       .catch((err) => console.log(err))
     }, 1000 )
- 
-     },[])
+ },[])
 
-     function removeProject(id){
+    function removeProject(id){
       
      fetch(`http://localhost:5000/projects/${id}`,{
       method:'DELETE',
