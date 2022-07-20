@@ -19,9 +19,14 @@ headers:
 },
 
 })//request,rota
+.then(resp => resp.json())
+.then((data) => {
+    setProject(data)
+})
+.catch(err => console.log(err))
 }, [id])//parâmetro importantíssimo que é nossa referência
 
-return     <p>Projeto</p>
+return     <p>{ project.name}</p>
 }
 
 export default Project

@@ -1,6 +1,5 @@
 import {Link  } from 'react-router-dom'
-
-import styles from './ProjectCard.module.css'
+ import styles from './ProjectCard.module.css'
 
 import {BsPencil, BsFillTrashFill} from 'react-icons/bs'
 
@@ -23,7 +22,7 @@ return(
         <span className = {`${styles[category?.toLowerCase() || '']}`}> </span> {category}
         </p>
         <div className={styles.project_card_action }>
-        <Link to={`/project / ${id}` }>
+        <Link to={`/project/${id}`}>
                 <BsPencil/> Editar
              </Link>
               <button onClick={remove} >
