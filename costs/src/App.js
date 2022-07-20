@@ -7,7 +7,8 @@ import Navbar from './components/Navbar'
  import Footer from './components/layout/Footer'
 import NewProject from './pages/NewProject';
 import Projects from './pages/Projects'
-
+import Project from './pages/Project'
+ 
 import { BrowserRouter as Router, Routes, Route, Link   } from 'react-router-dom';
  
 function App() {
@@ -24,8 +25,8 @@ function App() {
               <Route path='/empresa' element={<Empresa/>}></Route>
               <Route path='/contato' element={<Contato/>}></Route>
               <Route path='/newproject' element={<NewProject/>}></Route>
-              <Route path='/newproject' element={<NewProject/>}></Route>
-             </Routes>
+              <Route path='/project/:id' element={<Project/>}></Route>
+              </Routes>
           </Container>
           <Footer/>
         </Router>
