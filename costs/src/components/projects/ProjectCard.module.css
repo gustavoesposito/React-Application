@@ -3,7 +3,7 @@
     border:1px solid #7a7a7a;
     border-radius: 5px;
      margin:22px;
-      width:300px;
+      width:auto;
 
 }
 
@@ -82,9 +82,8 @@
 
     .project_card_action svg{
         margin-right:.5em;
-       margin-left: .5em; 
-
-    }
+        
+      }
         .project_card_action a:hover,
         .project_card_action button:hover
         {
