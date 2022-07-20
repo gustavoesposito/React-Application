@@ -8,6 +8,11 @@ const {id} =useParams()
 
 const {project,setProject}= useState([])
   
+useEffect(() => {
+
+fetch (`http://localhost:5000/projects/${id}`)//request
+
+}, [id])//parâmetro importantíssimo que é nossa referência
 
 return     <p>Projeto</p>
 }
