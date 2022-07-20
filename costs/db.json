@@ -2,14 +2,36 @@
   "projects": [
     {
       "name": "Gustavo",
-      "budget": "6666567",
+      "budget": "665789",
+      "category": {
+        "id": "2",
+        "name": "Marketing"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "Gustavo",
+      "budget": "1234567890",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Teste",
+      "budget": "1234567890",
       "category": {
         "id": "1",
         "name": "Vendas"
       },
       "cost": 0,
       "services": [],
-      "id": 1
+      "id": 3
     }
   ],
   "categories": [

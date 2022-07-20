@@ -2,8 +2,8 @@
     padding: 1em;
     border:1px solid #7a7a7a;
     border-radius: 5px;
-    width: 40%;
-    margin:0.5%;
+     margin:22px;
+      width:300px;
 
 }
 
@@ -38,7 +38,7 @@
     }
 
     .category_text .vendas{
-    background-color: #FFAEBC;
+    background-color: #ff9faf;
     }
 
     .category_text .marketing{
@@ -47,7 +47,7 @@
     }
 
     .category_text .design{
-        background-color: #B4F8C8;
+        background-color: #e9b4f8;
 
     }
 
@@ -71,7 +71,8 @@
         font-size: .9em;
         padding: .6em 1em;
         margin-right: 1em;
-        cursor:pointer;
+
+         cursor:pointer;
         border:1px solid #222;
         display:flex;
         align-items: center;
@@ -81,6 +82,7 @@
 
     .project_card_action svg{
         margin-right:.5em;
+       margin-left: .5em; 
 
     }
         .project_card_action a:hover,
