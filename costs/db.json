@@ -10,28 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "name": "5000",
-      "budget": "544545",
-      "category": {
-        "id": "2",
-        "name": "Marketing"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Desenvolvimento de software",
-      "budget": "44456",
-      "category": {
-        "id": "1",
-        "name": "Vendas"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
     }
   ],
   "categories": [
