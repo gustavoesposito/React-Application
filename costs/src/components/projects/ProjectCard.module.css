@@ -4,7 +4,10 @@
     border-radius: 5px;
      margin:22px;
       width:auto;
-
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     
 }
 
 .project_card h4{
@@ -82,7 +85,8 @@
 
     .project_card_action svg{
         margin-right:.5em;
-        
+        display: flex;
+        flex-shrink: 30px;
       }
         .project_card_action a:hover,
         .project_card_action button:hover
