@@ -24,6 +24,7 @@ function App() {
               <Route path='/empresa' element={<Empresa/>}></Route>
               <Route path='/contato' element={<Contato/>}></Route>
               <Route path='/newproject' element={<NewProject/>}></Route>
+              <Route path='/newproject' element={<NewProject/>}></Route>
              </Routes>
           </Container>
           <Footer/>
