@@ -10,7 +10,7 @@ const {project,setProject}= useState([])
   
 useEffect(() => {
 
-fetch (`http://localhost:5000/projects/${id}`)//request
+fetch (`http://localhost:5000/projects/${id}`)//request,rota
 
 }, [id])//parâmetro importantíssimo que é nossa referência
 
