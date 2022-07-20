@@ -1,12 +1,12 @@
 {
   "projects": [
     {
-      "name": "5000",
+      "name": "Gustavo",
+      "budget": "76757",
       "category": {
         "id": "2",
         "name": "Marketing"
       },
-      "budget": "554567",
       "cost": 0,
       "services": [],
       "id": 1
