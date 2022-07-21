@@ -42,12 +42,13 @@ return (
         <Container customClass="column">
           <div className={styles.details_container}>
             <h1>Projeto:{project.name}</h1>
-            <button 
+            <button  
+            className={styles.btn}
             onClick={toggleProjectForm}>
                 {!showProjectForm ? 'Editar Projetos' : 'Fechar'}
             </button>
              {!showProjectForm ? (
-                <div>
+                <div className={styles.project_info}>
                     <p>
                         <span>Categoria:</span> {project.category.name}
                     </p>
