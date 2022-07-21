@@ -22,7 +22,9 @@ return(
         <span className = {`${styles[category?.toLowerCase() || '']}`}> </span> {category}
         </p>
         <div className={styles.project_card_action }>
-         
+        <Link to={`/project/${id}`}>
+                <BsPencil/> Editar
+             </Link>
               <button onClick={remove} >
                 <BsFillTrashFill/> Excluir
               </button>
