@@ -38,7 +38,7 @@ function toggleProjectForm(){
 return (
 <>
 {project.name? (
-    <div>
+    <div className={styles.project_details}>
         <Container customClass="column">
           <div>
             <h1>Projeto:{project.name}</h1>
@@ -50,6 +50,12 @@ return (
                 <div>
                     <p>
                         <span>Categoria:</span> {project.category.name}
+                    </p>
+                    <p>
+                        <span>Total de orçamento:</span> R${project.budget}
+                    </p>
+                    <p>
+                        <span>Total utilizado:</span> R${project.cost}
                     </p>
                 </div>
              ) : (
