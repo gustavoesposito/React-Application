@@ -48,7 +48,9 @@ return (
             </button>
              {!showProjectForm ? (
                 <div>
-                    <p>project form</p>
+                    <p>
+                        <span>Categoria:</span> {project.category.name}
+                    </p>
                 </div>
              ) : (
                 <p>Detalhes do projeto</p>
