@@ -32,6 +32,10 @@ headers:
  
 }, [id])//parâmetro importantíssimo que é nossa referência
 
+function editPost(){
+
+}
+
 function toggleProjectForm(){
     setShowProjectForm(!showProjectForm)
 }
@@ -62,7 +66,7 @@ return (
                 </div>
              ) : (
                <div className={styles.project_info}>
-                <ProjectForm/>
+                <ProjectForm handleSubmit={editPost} btnText="Concluir Edição" projectData={project}/>
                </div>
              )}
           </div>

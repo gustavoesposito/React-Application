@@ -10,17 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "name": "Teste",
-      "budget": "4000",
-      "category": {
-        "id": "2",
-        "name": "Marketing"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
     }
   ],
   "categories": [
