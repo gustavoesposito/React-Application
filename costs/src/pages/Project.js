@@ -40,7 +40,7 @@ return (
 {project.name? (
     <div className={styles.project_details}>
         <Container customClass="column">
-          <div>
+          <div className={styles.details_container}>
             <h1>Projeto:{project.name}</h1>
             <button 
             onClick={toggleProjectForm}>
