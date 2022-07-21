@@ -5,16 +5,19 @@ import {useState,useEffect} from 'react'//controle de estados, e resgatando apen
 import Loading from '../components/layout/Loading'
 import Container from '../components/layout/Container'
 import ProjectForm from '../components/projects/ProjectForm'
+import Message from '../components/layout/Message'
 
 function Project(){
-const {id} =useParams()
+const {id} = useParams()
 
 const {project,setProject}= useState([])
 const {showProjectForm, setShowProjectForm} = useState(false)
+const [message, setMessage] = useState()
+const [type, setType] = useState()
   
 useEffect(() => {
 setTimeout(() => {
-    fetch (`http://localhost:5000/projects  / ${id}`,{
+    fetch (`http://localhost:5000/projects / ${id}`,{
 
 method:'GET',
 headers:
@@ -35,7 +38,9 @@ headers:
 function editPost(project){
     //budget validation
     if(project.budget<project.cost){
-    //mensagem
+    setMessage('O orçamento não pode ser menor que o custo do projeto!')
+    setType('error')
+    return false
     }
 
     fetch(`http://localhost:5000/projects/${project.id}`,{
@@ -43,8 +48,16 @@ function editPost(project){
        headers:{
         'Content-Type': 'application/json',
        },
-       body: JSON.stringify(project)
+       body: JSON.stringify(project),
     })
+    .then(resp => resp.json())
+        .then((data) => {
+            setProject(data)
+            setShowProjectForm(false)
+            setMessage('Projeto atualizado!')
+            setType('sucess')
+        })
+    .catch(err =>  console.log(err))
  }
 
 function toggleProjectForm(){
@@ -56,6 +69,7 @@ return (
 {project.name? (
     <div className={styles.project_details}>
         <Container customClass="column">
+            {message && <Message type={type} msg={message}/>}
           <div className={styles.details_container}>
             <h1>Projeto:{project.name}</h1>
             <button  
