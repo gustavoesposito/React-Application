@@ -32,9 +32,12 @@ headers:
  
 }, [id])//parâmetro importantíssimo que é nossa referência
 
-function editPost(){
-
-}
+function editPost(project){
+    //budget validation
+    if(project.budget<project.cost){
+    
+    }
+ }
 
 function toggleProjectForm(){
     setShowProjectForm(!showProjectForm)
