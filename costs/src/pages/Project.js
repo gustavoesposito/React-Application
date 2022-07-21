@@ -60,7 +60,9 @@ return (
                     </p>
                 </div>
              ) : (
-                <p>Detalhes do projeto</p>
+               <div className={styles.project_info}>
+                <p>form</p>
+               </div>
              )}
           </div>
         </Container>
