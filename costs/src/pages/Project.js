@@ -3,6 +3,7 @@ import styles from'./Project.module.css'
 import{useParams} from 'react-router-dom'//hook para resgatar o id  que vem pela URL, ele serve para pegar os parâmetros
 import {useState,useEffect} from 'react'//controle de estados, e resgatando apenas uma vez
 import Loading from '../components/layout/Loading'
+import Container from '../components/layout/Container'
 
 function Project(){
 const {id} =useParams()
@@ -29,13 +30,19 @@ headers:
  
 }, [id])//parâmetro importantíssimo que é nossa referência
 
-return <>{project.name? 
+return (
+<>
+{project.name? (
     <div>
-        
+        <Container customClass="column">
+
+        </Container>
     </div>
-    :<Loading/>}</>
+   ) : (<Loading/>
+    )}
+    </>
 
-
+)
 }
 
 export default Project
