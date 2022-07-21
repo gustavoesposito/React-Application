@@ -26,7 +26,11 @@ headers:
 .catch(err => console.log(err))
 }, [id])//parâmetro importantíssimo que é nossa referência
 
-return     <p>{ project.name}</p>
+return(
+    <>
+    </>
+
+)
 }
 
 export default Project
