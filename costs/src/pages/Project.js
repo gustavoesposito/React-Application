@@ -11,21 +11,31 @@ const {project,setProject}= useState([])
   
 useEffect(() => {
 setTimeout(() => {
-    
+    fetch (`http://localhost:5000/projects  / ${id}`,{
+
+method:'GET',
+headers:
+{
+    'Content-Type': 'application/json',
+},
+
+})//request,rota
+.then(resp => resp.json())
+.then((data) => {
+    setProject(data)
 })
+.catch(err => console.log(err))
+},5000)
  
 }, [id])//parâmetro importantíssimo que é nossa referência
 
-return(
-    <>
-    {project.name? (
-          <p>{project.name}</p>
-    ):(
-        <Loading/>
-    )}
-    </>
+return <>{project.name? 
+    <div>
+        
+    </div>
+    :<Loading/>}</>
 
-)
+
 }
 
 export default Project
