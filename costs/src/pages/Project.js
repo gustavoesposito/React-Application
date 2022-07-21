@@ -10,7 +10,7 @@ const {project,setProject}= useState([])
   
 useEffect(() => {
 
-fetch (`http://localhost:5000/projects/${id}`,{
+fetch (`http://localhost:5000/projects  / ${id}`,{
 
 method:'GET',
 headers:
