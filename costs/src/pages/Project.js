@@ -4,6 +4,7 @@ import{useParams} from 'react-router-dom'//hook para resgatar o id  que vem pela
 import {useState,useEffect} from 'react'//controle de estados, e resgatando apenas uma vez
 import Loading from '../components/layout/Loading'
 import Container from '../components/layout/Container'
+import ProjectForm from '../components/projects/ProjectForm'
 
 function Project(){
 const {id} =useParams()
@@ -61,7 +62,7 @@ return (
                 </div>
              ) : (
                <div className={styles.project_info}>
-                <p>form</p>
+                <ProjectForm/>
                </div>
              )}
           </div>
