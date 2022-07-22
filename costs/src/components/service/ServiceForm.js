@@ -10,11 +10,13 @@ function ServiceForm ({handleSubmit, btnText, projectData}){
 
     const [service, setService]= useState({})
 
-    function submit(){
-     setService({...service, [e.target.name]: e.target.value})
+    function submit(e){
+      e.preventDefault()
+      projectData.services.push(service)
+      handleSubmit(projectData)
     }
-    function handleChange(){
-        
+    function handleChange(e){
+        setService({...service, [e.target.name]: e.target.value})
     }
 
  return(

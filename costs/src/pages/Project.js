@@ -2,6 +2,9 @@ import styles from'./Project.module.css'
 
 import{useParams} from 'react-router-dom'//hook para resgatar o id  que vem pela URL, ele serve para pegar os parâmetros
 import {useState,useEffect} from 'react'//controle de estados, e resgatando apenas uma vez
+
+import {parse, v4 as uuidv4} from 'path/posix'
+
 import Loading from '../components/layout/Loading'
 import Container from '../components/layout/Container'
 import ProjectForm from '../components/projects/ProjectForm'
@@ -63,7 +66,15 @@ function editPost(project){
     .catch(err =>  console.log(err))
  }
 
- function creativeService(){
+ function creativeService(project){
+    const lastService = project.services[project.services.length-1]
+       
+    lastService.id = uuidv4
+
+    const lastServiceCost = lastService.cost
+
+    const newCost = parseFloat (project.cost) + parseFloat(lastServiceCost)
+
     
  }
 
