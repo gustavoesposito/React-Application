@@ -105,10 +105,14 @@ function editPost(project){
 
 function removeService(id, cost){
 
-    const servicesUpdate = project.services.filter(
+    const servicesUpdated = project.services.filter(
         (service) => service.id !== id
-        )}
-
+        )
+        const projectUpdated= project
+        projectUpdated.services = servicesUpdated
+        projectUpdated.cost =  parseFloat(projectUpdated.cost) - parse
+     }
+ 
  
 
 function toggleProjectForm(){
