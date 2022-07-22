@@ -105,9 +105,11 @@ function editPost(project){
 
 function removeService(id, cost){
 
-    const servicesUpdate = 
+    const servicesUpdate = project.services.filter(
+        (service) => service.id !== id
+        )}
 
-}
+ 
 
 function toggleProjectForm(){
     setShowProjectForm(!showProjectForm)
