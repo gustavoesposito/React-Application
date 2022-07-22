@@ -41,7 +41,7 @@ function ServiceForm ({handleSubmit, btnText, projectData}){
         handleOnChange={handleChange}
         
         />
-        <SubmitButton text={textBtn}/>
+        <SubmitButton text={btnText}/>
     </form>
  )
 }

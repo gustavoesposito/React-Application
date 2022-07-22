@@ -63,6 +63,10 @@ function editPost(project){
     .catch(err =>  console.log(err))
  }
 
+ function creativeService(){
+    
+ }
+
 function toggleProjectForm(){
     setShowProjectForm(!showProjectForm)
 }
@@ -110,9 +114,13 @@ return (
                 {!showServiceForm ? 'Adicionar Serviço' : 'Fechar'}
             </button> 
             <div className={styles.project_info}>
-                {showServiceForm &&  (
-                    <ServiceForm/>
-                )}
+                {showServiceForm &&   <ServiceForm
+                handleSubmit={creativeService}
+                btnText="Adicionar Serviço"
+                projectData={project}
+                />}
+                    
+                
                     
             </div>
            </div>
