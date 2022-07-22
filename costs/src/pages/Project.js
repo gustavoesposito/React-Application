@@ -36,6 +36,7 @@ headers:
 }, [id])//parâmetro importantíssimo que é nossa referência
 
 function editPost(project){
+    setMessage('')
     //budget validation
     if(project.budget<project.cost){
     setMessage('O orçamento não pode ser menor que o custo do projeto!')
@@ -91,7 +92,8 @@ return (
                 </div>
              ) : (
                <div className={styles.project_info}>
-                <ProjectForm handleSubmit={editPost} btnText="Concluir Edição" projectData={project}/>
+                <ProjectForm 
+                handleSubmit={editPost} btnText="Concluir Edição" projectData={project}/>
                </div>
              )}
           </div>
