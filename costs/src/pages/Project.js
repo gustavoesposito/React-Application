@@ -98,13 +98,14 @@ function editPost(project){
      })
      .then((resp) => resp.json()) 
      .then((data) => {
-        //exibir serviço
-        console.data(data)
-     })
+       setShowServiceForm(false)     
+})
      .catch(err => console.log(err))
  }
 
-function removeService(){
+function removeService(id, cost){
+
+    const servicesUpdate = 
 
 }
 
