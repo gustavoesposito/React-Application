@@ -10,6 +10,8 @@ import Container from '../components/layout/Container'
 import ProjectForm from '../components/projects/ProjectForm'
 import Message from '../components/layout/Message'
 import ServiceForm from '../components/service/ServiceForm'
+import ServiceCard from '../components/service/ServiceCard'
+
 
 function Project(){
 const {id} = useParams()
@@ -103,7 +105,7 @@ function editPost(project){
  }
 
 function removeService(){
-    
+
 }
 
 function toggleProjectForm(){
