@@ -6,6 +6,7 @@ import Loading from '../components/layout/Loading'
 import Container from '../components/layout/Container'
 import ProjectForm from '../components/projects/ProjectForm'
 import Message from '../components/layout/Message'
+import ServiceForm from '../components/service/ServiceForm'
 
 function Project(){
 const {id} = useParams()
@@ -109,9 +110,16 @@ return (
                 {!showServiceForm ? 'Adicionar Serviço' : 'Fechar'}
             </button> 
             <div className={styles.project_info}>
-                
+                {showServiceForm &&  (
+                    <ServiceForm/>
+                )}
+                    
             </div>
            </div>
+           <h2>Serviços</h2>
+           <Container customClass="start">
+            <p>Itens de Serviços</p>
+           </Container>
         </Container>
     </div>
    ) : (<Loading/>
