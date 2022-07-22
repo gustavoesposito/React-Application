@@ -8,11 +8,13 @@ import Submit from '../form/SubmitButton'
 
 function ServiceForm ({handleSubmit, btnText, projectData}){
 
-    function submit(){
+    const [service, setService]= useState({})
 
+    function submit(){
+     setService({...service, [e.target.name]: e.target.value})
     }
     function handleChange(){
-
+        
     }
 
  return(
